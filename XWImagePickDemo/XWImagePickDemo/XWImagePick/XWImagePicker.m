@@ -88,12 +88,12 @@
     sourceType = UIImagePickerControllerSourceTypeCamera; //照相机
     
     UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
-        //pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-        
-    }
+//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+//        pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
+//        //pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+//        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
+//        
+//    }
     pickerImage.sourceType = sourceType;
     pickerImage.delegate = self;
     pickerImage.allowsEditing = YES;
