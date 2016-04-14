@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XWImagePicker.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,9 @@
  */
 - (IBAction)pickImageClick:(UIButton *)pickBtn {
     NSLog(@"选择图片->");
-    
+    [[XWImagePicker shareInstance] showWithController:self finished:^(UIImage *image) {
+         NSLog(@"image=%@",image);
+    } animated:YES];
 }
 
 

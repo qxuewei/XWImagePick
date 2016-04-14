@@ -13,6 +13,10 @@
 		2E15259D1CBF778000D0B933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E15259B1CBF778000D0B933 /* Main.storyboard */; };
 		2E15259F1CBF778000D0B933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E15259E1CBF778000D0B933 /* Assets.xcassets */; };
 		2E1525A21CBF778000D0B933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1525A01CBF778000D0B933 /* LaunchScreen.storyboard */; };
+		2E1525AC1CBF7E1B00D0B933 /* XWImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525AB1CBF7E1B00D0B933 /* XWImagePicker.m */; };
+		2E1525B11CBF8A0200D0B933 /* XWDownSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525B01CBF8A0200D0B933 /* XWDownSheet.m */; };
+		2E1525B41CBF8A4800D0B933 /* XWDownSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525B31CBF8A4800D0B933 /* XWDownSheetCell.m */; };
+		2E1525B71CBF8A7000D0B933 /* XWDownSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525B61CBF8A7000D0B933 /* XWDownSheetModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		2E15259E1CBF778000D0B933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E1525A11CBF778000D0B933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E1525A31CBF778000D0B933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1525AA1CBF7E1B00D0B933 /* XWImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWImagePicker.h; sourceTree = "<group>"; };
+		2E1525AB1CBF7E1B00D0B933 /* XWImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWImagePicker.m; sourceTree = "<group>"; };
+		2E1525AF1CBF8A0200D0B933 /* XWDownSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDownSheet.h; sourceTree = "<group>"; };
+		2E1525B01CBF8A0200D0B933 /* XWDownSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDownSheet.m; sourceTree = "<group>"; };
+		2E1525B21CBF8A4800D0B933 /* XWDownSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDownSheetCell.h; sourceTree = "<group>"; };
+		2E1525B31CBF8A4800D0B933 /* XWDownSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDownSheetCell.m; sourceTree = "<group>"; };
+		2E1525B51CBF8A7000D0B933 /* XWDownSheetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDownSheetModel.h; sourceTree = "<group>"; };
+		2E1525B61CBF8A7000D0B933 /* XWDownSheetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDownSheetModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,24 @@
 		2E1525A91CBF781800D0B933 /* XWImagePick */ = {
 			isa = PBXGroup;
 			children = (
+				2E1525AE1CBF89A900D0B933 /* XWDownSheet */,
+				2E1525AA1CBF7E1B00D0B933 /* XWImagePicker.h */,
+				2E1525AB1CBF7E1B00D0B933 /* XWImagePicker.m */,
 			);
 			path = XWImagePick;
+			sourceTree = "<group>";
+		};
+		2E1525AE1CBF89A900D0B933 /* XWDownSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2E1525AF1CBF8A0200D0B933 /* XWDownSheet.h */,
+				2E1525B01CBF8A0200D0B933 /* XWDownSheet.m */,
+				2E1525B21CBF8A4800D0B933 /* XWDownSheetCell.h */,
+				2E1525B31CBF8A4800D0B933 /* XWDownSheetCell.m */,
+				2E1525B51CBF8A7000D0B933 /* XWDownSheetModel.h */,
+				2E1525B61CBF8A7000D0B933 /* XWDownSheetModel.m */,
+			);
+			path = XWDownSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +187,11 @@
 			files = (
 				2E15259A1CBF778000D0B933 /* ViewController.m in Sources */,
 				2E1525971CBF778000D0B933 /* AppDelegate.m in Sources */,
+				2E1525AC1CBF7E1B00D0B933 /* XWImagePicker.m in Sources */,
 				2E1525941CBF778000D0B933 /* main.m in Sources */,
+				2E1525B71CBF8A7000D0B933 /* XWDownSheetModel.m in Sources */,
+				2E1525B41CBF8A4800D0B933 /* XWDownSheetCell.m in Sources */,
+				2E1525B11CBF8A0200D0B933 /* XWDownSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +340,7 @@
 				2E1525A81CBF778000D0B933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
